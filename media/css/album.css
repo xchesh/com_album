@@ -1,0 +1,174 @@
+/*-----------UPLOAD-Img------------*/
+#media:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#media #status{
+    position: relative;
+    float: left;
+    padding: 0;
+    background: none;
+    border: 0;
+    width: 20%;
+}
+#media #status .progress-bar
+{
+    position: relative;
+    width: 96%;
+    height: 3px;
+    margin: 3px 0 0;
+    padding: 0;
+}
+#media #status .progress-bar .progress-bar-inside
+{
+    position: relative;
+    height: 3px;
+    width: 0;
+    position: relative;
+    z-index: 1;
+    background:#a5db00;
+    border-radius: 2px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="a5db00", endColorstr="97c800");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#a5db00), to(#97c800));
+    background-image: -moz-linear-gradient(top center, #a5db00, #97c800);
+    background-image: -o-linear-gradient(top, #a5db00, #97c800);
+}
+
+#images{
+    overflow: auto;
+    width: 80%;
+    float: right;
+}
+#images section{
+    position: relative;
+    padding: 0;
+    margin: 5px;
+    border: 0;
+    -moz-box-shadow: 0px 0px 5px #9b9b9b;
+    -webkit-box-shadow: 0px 0px 5px #9b9b9b;
+    -o-box-shadow: 0px 0px 5px #9b9b9b;
+    box-shadow: 0px 0px 5px #9b9b9b;
+    border: 1px solid #bbbbbb;
+    float: left;
+    background: white;
+}
+#images section .overIMG img{
+    float: left
+}
+#images section .overIMG{
+    height: 150px;
+    overflow: hidden;
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+#images section .attributs{
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 3;
+    display: none;
+    background: none repeat scroll 0% 0% rgba(200, 200, 200, 0.6);
+}
+#images section .attributs input, #images section .attributs textarea{
+    display: block;
+    width: 85%;
+    resize: none;
+    margin: 12px auto 0;
+    max-height: 38px;
+}
+#images section:after{
+    content: '';
+    clear: both;
+}
+#images section a{
+    color: rgb(255,255,255);
+    color: rgba(255,255,255,0);
+}
+.closed, .delete{
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    padding: 0;
+    background-color: #da4f49;
+    background-image: -moz-linear-gradient(top,#ee5f5b,#bd362f);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#ee5f5b),to(#bd362f));
+    background-image: -webkit-linear-gradient(top,#ee5f5b,#bd362f);
+    background-image: -o-linear-gradient(top,#ee5f5b,#bd362f);
+    background-image: linear-gradient(to bottom,#ee5f5b,#bd362f);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffee5f5b', endColorstr='#ffbd362f', GradientType=0);
+    border-color: #bd362f #bd362f #802420;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    border-radius: 3px;
+    width: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: arial;
+    z-index: 5;
+    padding-bottom: 1px;
+    padding-right: 1px;
+}
+#jform_photo{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.tooltips-tabs{
+    width: 20%;
+    float: left;
+}
+.tooltips-tabs h3{
+    padding-left: 24px;
+}
+.tooltips-tabs p{
+    padding: 0 15px;
+}
+.input_wrapper{
+    margin: 1em 0;
+}
+#uploadBut{
+    margin-bottom: 10px;
+}
+#status .tempContainer{
+    margin-bottom: 10px;
+}
+#status .tempContainer p
+{
+    padding: 0;
+    margin: 0 10px 0 0;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+#status .tempContainer:after
+{
+    content: '';
+    display: block;
+    clear: both;
+}
+#media2 .input_wrapper #delete_video
+{
+    padding: 6px 8px;
+    line-height: 13px;
+}
+
+#view-panel
+{
+    margin-bottom: 10px;
+}
+#view-panel .btn
+{
+    padding: 7px 16px;
+    font-size: 13px;
+    margin: -2px;
+}

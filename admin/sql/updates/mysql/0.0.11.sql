@@ -1,0 +1,1 @@
+ALTER TABLE `#__album` ADD `alias` varchar(255) NOT NULL;

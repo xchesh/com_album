@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+
+	<update>
+		<name>Album</name>
+		<description>Компонент album</description>
+		<element>com_album</element>
+		<type>component</type>
+		<version>0.0.13</version>
+
+		<infourl title="Album URL">http://xchesh.um.la/</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">http://xchesh.um.la/files/com_album-0.0.13-final.zip</downloadurl>
+		</downloads>
+
+		<maintainer>xchesh</maintainer>
+		<maintainerurl>http://xchesh.um.la/</maintainerurl>
+		<targetplatform name="joomla" version="2.5" />
+	</update>
+
+</updates>

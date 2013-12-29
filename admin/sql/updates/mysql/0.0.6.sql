@@ -1,0 +1,1 @@
+ALTER TABLE `#__album_image` ADD `min` varchar(255) NOT NULL

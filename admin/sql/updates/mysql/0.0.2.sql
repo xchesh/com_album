@@ -1,0 +1,1 @@
+ALTER TABLE `#__album` ADD `cover` varchar(255) NOT NULL DEFAULT ''

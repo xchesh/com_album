@@ -1,0 +1,55 @@
+.albums_all{
+    
+}
+.albums_all .album{
+    position: relative;
+    width: 18em;
+    height: 15em;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 1em;
+    float: left;
+    -moz-box-shadow: 0px 0px 5px #9b9b9b;
+    -webkit-box-shadow: 0px 0px 5px #9b9b9b;
+    -o-box-shadow: 0px 0px 5px #9b9b9b;
+    box-shadow: 0px 0px 5px #9b9b9b;
+}
+.albums_all .album input{
+    position: absolute;
+    margin-left: -100px;
+}
+.albums_all .album label{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: white;
+}
+.albums_all .album.check label:after{
+    font-family: 'IcoMoon';
+    font-style: normal;
+    speak: none;
+    content: "G47";
+    color: #51a351;
+    position: absolute;
+    left: 50%;
+    margin-top: -.7em;
+    top: 50%;
+    margin-left: -.4em;
+    font-size: 4em;
+    width: 1em;
+    overflow: hidden;
+    line-height: 1em;
+}
+.albums_all .album label a{
+    background: rgb(0, 136, 204);
+    display: block;
+    padding: .5em 1em;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.clr, .clear{
+    clear: both;
+}

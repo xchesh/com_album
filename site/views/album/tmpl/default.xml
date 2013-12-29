@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_ALBUM_ALBUM_VIEW_DEFAULT_TITLE">
+		<message>COM_ALBUM_ALBUM_VIEW_DEFAULT_DESC</message>
+	</layout>
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_album/models/fields"
+	>
+            <fieldset name="request">
+                <field
+                    name="id"
+                    type="sql"
+                    query="SELECT id, name FROM #__album"
+                    key_field="id"
+                    value_field="name" 
+                    label="COM_ALBUM_ALBUM_FIELD_ONE_LABEL"
+                    description="COM_ALBUM_ALBUM_FIELD_ONE_DESC"
+                />
+            </fieldset>
+	</fields>
+</metadata>
