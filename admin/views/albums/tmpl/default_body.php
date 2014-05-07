@@ -3,7 +3,7 @@
 defined('_JEXEC') or die;
 ?>
 <div class="albums_all">
-    <? foreach ($this->items as $i => $item): 
+    <?php foreach ($this->items as $i => $item): 
         $canEdit = JFactory::getUser()->authorise('core.edit', 'com_album.album.' . $item->id); ?>
         <div class="album">
             <?php echo JHtml::_('grid.id', $i, $item->id); ?>
