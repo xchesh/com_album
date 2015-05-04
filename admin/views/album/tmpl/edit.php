@@ -73,9 +73,8 @@ $params = $this->form->getFieldsets('params');
                 <div class="tab-pane" id="media">
                     <div id="status">
                         <div id="view-panel" class="btn-group">
-                            <span class="icon-grid-view btn btn-success"></span>
-                            <span class="icon-list btn"></span>
-                            <span class="icon-grid-view-2 btn"></span>
+                            <span class="icon-grid-view btn btn-success" data-value="grid"></span>
+                            <span class="icon-list btn" data-value="list"></span>
                         </div>
                         <div id="upload-panel">
                             

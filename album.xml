@@ -82,8 +82,8 @@
             </languages>
 	</administration>
 	<!-- Сервер обновлений -->
-	<updateservers>
-            <!-- Заметка: Не допускается пробелов или переносов строк между тегам server -->
-            <server type="extension" priority="1" name="Сайт обновлений компонента com_album">http://xchesh.um.la/update/album-update.xml</server>
-	</updateservers>
+    <!-- <updateservers>-->
+        <!-- Заметка: Не допускается пробелов или переносов строк между тегам server -->
+        <!-- <server type="extension" priority="1" name="Сайт обновлений компонента com_album">http://xchesh.um.la/update/album-update.xml</server>-->
+    <!-- </updateservers>-->
 </extension>
