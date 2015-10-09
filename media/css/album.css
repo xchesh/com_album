@@ -90,6 +90,35 @@
     color: rgb(255,255,255);
     color: rgba(255,255,255,0);
 }
+
+#images.list section {
+   float: none;
+   width: auto;
+   display: block;
+   height: 150px;
+   overflow: hidden;
+   margin: 0 0 1em;
+}
+#images.list section .attributs {
+   display: block !important;
+   width: auto;
+   left: 250px;
+}
+#images.list section .overIMG {
+   width: 250px;
+}
+#images.list section .overIMG img  {
+   min-width: 100%;
+   min-height: 100%;
+}
+#images.list section .attributs input, 
+#images.list section .attributs textarea {
+   width: 95%;
+}
+#images.list .delete {
+   top: 5px;
+   right: 5px;
+}
 .closed, .delete{
     text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
     position: absolute;

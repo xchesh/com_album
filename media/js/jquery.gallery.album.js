@@ -1,4 +1,5 @@
-$(document).ready(function() {
+jQuery.noConflict();
+jQuery(document).ready(function($) {
     $('.gallery .image a').fancybox();
     $(".gallery  a.iframe").fancybox(
     { 
@@ -6,16 +7,16 @@ $(document).ready(function() {
           "frameHeight" : 400 
     });
 })
-$(window).load(function(){
+jQuery(window).load(function(){
     image_ready ();
 })
-$(window).resize(function(){
+jQuery(window).resize(function(){
     image_ready ();
 })
 
 function image_ready (){
-    if ($(window).width()>640){
-        var height_a = $('.gallery .image');
+    if (jQuery('.gallery').width()>640){
+        var height_a = jQuery('.gallery .image');
         var wide = {
             lenght:0,
             data: {}
@@ -25,23 +26,23 @@ function image_ready (){
             data:{}
         };
         height_a.each(function(indx){
-            if ($(this).outerHeight(true)>$(this).outerWidth(true)){
+            if (jQuery(this).outerHeight(true)>jQuery(this).outerWidth(true)){
                 narrow.lenght++;
-                narrow.data[indx] = $(this);
-                $(this).width('12.5%').find('img').height('100%');
+                narrow.data[indx] = jQuery(this);
+                jQuery(this).width('12.5%').find('img').height('100%');
             }else{
                 wide.lenght++;
-                wide.data[indx] = $(this);
-                $(this).width('29%').find('img').height('100%');
+                wide.data[indx] = jQuery(this);
+                jQuery(this).width('29%').find('img').height('100%');
             }
         });
         if (narrow.lenght>0){
             for(var key in narrow.data){
-                height_a.eq(key).appendTo($('.gallery'));
+                height_a.eq(key).appendTo(jQuery('.gallery'));
             }
         }
     }else{
-        $('.gallery .image').css({
+        jQuery('.gallery .image').css({
             'width':'46%',
             'max-width': '46%'
         });
