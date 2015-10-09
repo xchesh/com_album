@@ -40,14 +40,30 @@ class AlbumModelCategory_albums extends JModelItem
 	{
             if (!isset($this->item)) 
             {
-                $catid = $this->getState('album.catid');
-
+               $orderSQL = '';
+               $catid = $this->getState('album.catid');
+               $order = $this->getState('album.order');
+               switch ($order) {
+                   case 1:
+                     $orderSQL = 'h.ordering ASC';
+                     break;
+                   case 2:
+                     $orderSQL = 'h.ordering DESC';
+                     break;
+                   case 3:
+                     $orderSQL = 'h.name DESC';
+                     break;
+                  default:
+                     $orderSQL = 'h.name ASC';
+                     break;
+               }
                 // Конструируем SQL запрос.
                 $this->_db->setQuery($this->_db->getQuery(true)
                                 ->select('h.*, c.title as category, c.description as catdesc')
                                 ->from('#__album as h')
                                 ->leftJoin('#__categories as c ON h.catid=c.id')
-                                ->where('h.catid=' . (int)$catid.' OR h.catid IN (SELECT id FROM #__categories WHERE parent_id='.(int)$catid.')'));
+                                ->where('h.catid=' . (int)$catid.' OR h.catid IN (SELECT id FROM #__categories WHERE parent_id='.(int)$catid.')')
+                                ->order($orderSQL));
 
                 if (!$this->item = $this->_db->loadObjectList()) 
                 {
@@ -70,10 +86,11 @@ class AlbumModelCategory_albums extends JModelItem
 
 		// Получаем Id сообщения из Запроса.
 		$catid = $app->input->getInt('catid');
-
+      $order = $app->input->getInt('order');
+      
 		// Добавляем Id сообщения в состояние модели.
 		$this->setState('album.catid', $catid);
-
+      $this->setState('album.order', $order);
 		parent::populateState();
 	}
 }
